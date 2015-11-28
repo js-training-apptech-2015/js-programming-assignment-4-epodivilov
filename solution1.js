@@ -5,7 +5,7 @@ function ObjectWithMethodOverloading() {
 ObjectWithMethodOverloading.prototype.overload = function (name, func, typeArray) {
     var arr = [func, typeArray];
     this.__funcArray.push(arr);
-    this[name] = function t() {
+    this[name] = function () {
         var listOfFunction = this.__funcArray;
         var args = arguments;
         for (var i = 0; i < listOfFunction.length; i++) {
