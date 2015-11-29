@@ -40,12 +40,11 @@ function set(x) {
 a.overload('value', get);
 a.overload('value', set);
 
-
 a.value(123);
 var value = a.value();
 
-console.log(a._value);
-console.log(value);
+//console.log(a._value);
+//console.log(value);
 
 var o = new ObjectWithMethodOverloading();
 function multSq(n) {
@@ -72,7 +71,7 @@ var res1 = o.mult(2,3); // res1 === 6
 var res2 = o.mult('ab',3); // res === 'ababab'
 var res4 = o.mult2(3); // res4 === 0
 
-console.log(res0);
-console.log(res1);
-console.log(res2);
-console.log(res4);
+//console.log(res0);
+//console.log(res1);
+//console.log(res2);
+//console.log(res4);

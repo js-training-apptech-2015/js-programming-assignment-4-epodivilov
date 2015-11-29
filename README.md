@@ -49,7 +49,7 @@ var res2 = o.mult('ab',3); // res === 'ababab'
 Implement an AMD module loader.
 There should be a global function `define`, that accepts an array of Strings (dependencies) and a callback function, that gets executed when all the dependencies are loaded:
 ```javascript
-function define(['dep.file.js', 'widgets/dep2.file.js'], function(dep1, dep2) {
+function define(['add.file.js', 'widgets/dep2.file.js'], function(dep1, dep2) {
     function add(x, y) {
         return Number(x) + Number(y);
     }
