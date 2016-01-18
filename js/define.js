@@ -46,7 +46,7 @@ function uploadTXT(file) {
 }
 
 function uploadIMG(file) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
         var newIMG = document.createElement('img');
         var module = (file.split('\\').pop().split('/').pop().split('.'))[0];
         newIMG.src = file;

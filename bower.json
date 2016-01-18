@@ -1,0 +1,15 @@
+{
+  "name": "js-programming-assignment-4-epodivilov",
+  "homepage": "https://github.com/js-training-apptech-2015/js-programming-assignment-4-epodivilov",
+  "authors": [
+    "Подивилов Евгений <evgeniy.podivilov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
+  }
+}
