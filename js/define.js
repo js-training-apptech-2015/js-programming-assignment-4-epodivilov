@@ -79,12 +79,15 @@ function define() {
         });
 
         Promise.all(promises).then(function (results) {
-            console.log(results);
             var args = [];
             results.forEach(function (module) {
                 args.push(window[module]);
             });
-            window[module] = callback2.apply(this, args);
+            if(callback2) {
+                window[module] = callback2.apply(this, args);
+            }
         });
     }
 }
+
+define([mainScript]);
